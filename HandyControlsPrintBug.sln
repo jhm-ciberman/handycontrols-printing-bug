@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyControlsPrintBug", "HandyControlsPrintBug.csproj", "{B16A9A00-2422-4236-B47E-5A5CAAAF733E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B16A9A00-2422-4236-B47E-5A5CAAAF733E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B16A9A00-2422-4236-B47E-5A5CAAAF733E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B16A9A00-2422-4236-B47E-5A5CAAAF733E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B16A9A00-2422-4236-B47E-5A5CAAAF733E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {405C8570-075D-4FDD-B05E-761CF35408C6}
+	EndGlobalSection
+EndGlobal

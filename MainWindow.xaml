@@ -1,0 +1,51 @@
+﻿<Window 
+    x:Class="HandyControlsPrintBug.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:HandyControlsPrintBug" 
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    mc:Ignorable="d"
+    Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <hc:Card Grid.Column="0" Margin="0,0,20,0">
+            <StackPanel Orientation="Vertical" Margin="20" >
+                <TextBlock FontSize="20" Text="Bug HandyControls"/>
+
+                <TextBlock 
+                    Margin="0,20"
+                    TextWrapping="Wrap"       
+                    Text="To reproduce the bug you must instantiate your View programatically via code. then, set it's DataContext and then print the element. See the MainWindow's code behind for more info."/>
+
+                <Button 
+                    Margin="0,10"
+                    Click="ButtonNoBug_Click" 
+                    Style="{StaticResource ButtonPrimary}" 
+                    Content="Print DataGrid on screen (no bug)" 
+                    HorizontalAlignment="Stretch"/>
+
+                <Button 
+                    Margin="0,10"
+                    Click="ButtonBug_Click" 
+                    Style="{StaticResource ButtonPrimary}"
+                    Content="Print offscreen datagrid (bug)" 
+                    HorizontalAlignment="Stretch"/>
+            </StackPanel>
+        </hc:Card>
+
+        <StackPanel
+            Grid.Column="1"
+            HorizontalAlignment="Stretch">
+
+            <TextBlock Margin="0,20" Text="On screen user control: MyPrintPageView"/>
+
+            <local:MyPrintPageView x:Name="elementToPrint"/>
+        </StackPanel>
+    </Grid>
+</Window>
